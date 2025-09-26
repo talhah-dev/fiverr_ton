@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TON‑style Navbar • Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome (icons) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        /* Dropdown / sheet motion */
+       
+    </style>
+</head>
+
+<body class="min-h-screen bg-white text-zinc-900">
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 border-b border-zinc-200/70 bg-white/80 backdrop-blur">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <!-- Left: Logo -->
+                <a href="#" class="flex items-center gap-2">
+                    <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-sky-500 text-white"><i
+                            class="fa-solid fa-gem text-sm"></i></span>
+                    <span class="text-xl font-extrabold tracking-tight">TON</span>
+                </a>
+
+                <!-- Center: Desktop nav -->
+                <nav class="hidden md:flex items-center gap-2">
+                    <!-- Use -->
+                    <div class="relative group" data-menu>
+                        <button
+                            class="rounded-xl px-3 py-2 text-[15px] font-semibold hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-sky-400/50"
+                            aria-haspopup="true" aria-expanded="false">Use</button>
+                        <div
+                            class="menu-panel translate-y-2 transition-transform group-hover:translate-y-0 absolute left-1/2 top-full z-30 w-[420px] -translate-x-1/2 pt-3">
+                            <div
+                                class="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-xl ring-1 ring-black/5">
+                                <ul class="divide-y divide-zinc-100 p-1">
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#wallet"><span
+                                                class="mt-0.5 text-zinc-700"><i
+                                                    class="fa-solid fa-wallet w-5"></i></span><span><span
+                                                    class="block text-sm font-semibold">Get a Wallet</span><span
+                                                    class="block text-xs text-zinc-500">Start using
+                                                    TON</span></span></a></li>
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#toncoin"><span
+                                                class="mt-0.5 text-zinc-700"><i
+                                                    class="fa-solid fa-coins w-5"></i></span><span><span
+                                                    class="block text-sm font-semibold">Get Toncoin</span><span
+                                                    class="block text-xs text-zinc-500">Buy with card or
+                                                    exchange</span></span></a></li>
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#stake"><span
+                                                class="mt-0.5 text-zinc-700"><i
+                                                    class="fa-solid fa-shield-halved w-5"></i></span><span><span
+                                                    class="block text-sm font-semibold">Stake</span><span
+                                                    class="block text-xs text-zinc-500">Contribute to
+                                                    security</span></span></a></li>
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#payments"><span
+                                                class="mt-0.5 text-zinc-700"><i
+                                                    class="fa-regular fa-credit-card w-5"></i></span><span><span
+                                                    class="block text-sm font-semibold">Accept Payments</span><span
+                                                    class="block text-xs text-zinc-500">Directly and
+                                                    worldwide</span></span></a></li>
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#apps"><span
+                                                class="mt-0.5 text-zinc-700"><i
+                                                    class="fa-solid fa-table-cells-large w-5"></i></span><span><span
+                                                    class="block text-sm font-semibold">Apps & Services</span><span
+                                                    class="block text-xs text-zinc-500">Explore TON
+                                                    ecosystem</span></span></a></li>
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#domains"><span
+                                                class="mt-0.5 text-zinc-700"><i
+                                                    class="fa-solid fa-globe w-5"></i></span><span><span
+                                                    class="block text-sm font-semibold">Domains</span><span
+                                                    class="block text-xs text-zinc-500">Easy‑to‑remember
+                                                    address</span></span></a></li>
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#usdt"><span
+                                                class="mt-0.5 text-zinc-700"><i
+                                                    class="fa-solid fa-dollar-sign w-5"></i></span><span><span
+                                                    class="block text-sm font-semibold">USDT on TON</span><span
+                                                    class="block text-xs text-zinc-500">Explore stablecoin
+                                                    usage</span></span></a></li>
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#bridges"><span
+                                                class="mt-0.5 text-zinc-700"><i
+                                                    class="fa-solid fa-bridge w-5"></i></span><span><span
+                                                    class="block text-sm font-semibold">Cross‑Chain Bridges</span><span
+                                                    class="block text-xs text-zinc-500">Transfer assets from other
+                                                    networks</span></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Learn -->
+                    <div class="relative group" data-menu>
+                        <button
+                            class="rounded-xl px-3 py-2 text-[15px] font-semibold hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-sky-400/50">Learn</button>
+                        <div
+                            class="menu-panel translate-y-2 transition-transform group-hover:translate-y-0 absolute left-1/2 top-full z-30 w-[360px] -translate-x-1/2 pt-3">
+                            <div
+                                class="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-xl ring-1 ring-black/5">
+                                <ul class="grid grid-cols-1 divide-y divide-zinc-100 p-1">
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#concept"><i
+                                                class="fa-regular fa-circle-question mt-0.5 w-5"></i><span><b
+                                                    class="text-sm">TON Concept</b>
+                                                <div class="text-xs text-zinc-500">Introduction</div>
+                                            </span></a></li>
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#decentralized"><i
+                                                class="fa-solid fa-diagram-project mt-0.5 w-5"></i><span><b
+                                                    class="text-sm">Decentralized Network</b>
+                                                <div class="text-xs text-zinc-500">Self‑governance blockchain</div>
+                                            </span></a></li>
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#roadmap"><i
+                                                class="fa-solid fa-chart-line mt-0.5 w-5"></i><span><b
+                                                    class="text-sm">Roadmap</b>
+                                                <div class="text-xs text-zinc-500">History, status and the future</div>
+                                            </span></a></li>
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#tonstat"><i
+                                                class="fa-solid fa-chart-area mt-0.5 w-5"></i><span><b
+                                                    class="text-sm">TonStat</b>
+                                                <div class="text-xs text-zinc-500">Key metrics of the network</div>
+                                            </span></a></li>
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#mining"><i
+                                                class="fa-solid fa-mountain-sun mt-0.5 w-5"></i><span><b
+                                                    class="text-sm">History of Mining</b>
+                                                <div class="text-xs text-zinc-500">How Toncoin was evolved</div>
+                                            </span></a></li>
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#toncoin-learn"><i
+                                                class="fa-solid fa-coins mt-0.5 w-5"></i><span><b
+                                                    class="text-sm">Toncoin</b>
+                                                <div class="text-xs text-zinc-500">Use of the coin</div>
+                                            </span></a></li>
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#validators"><i
+                                                class="fa-solid fa-star-of-life mt-0.5 w-5"></i><span><b
+                                                    class="text-sm">Validators</b>
+                                                <div class="text-xs text-zinc-500">Decentralization approach</div>
+                                            </span></a></li>
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#whitepaper"><i
+                                                class="fa-regular fa-file-lines mt-0.5 w-5"></i><span><b
+                                                    class="text-sm">White Paper</b>
+                                                <div class="text-xs text-zinc-500">TON fundamentals</div>
+                                            </span></a></li>
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#sustain"><i
+                                                class="fa-solid fa-leaf mt-0.5 w-5"></i><span><b
+                                                    class="text-sm">Sustainability</b>
+                                                <div class="text-xs text-zinc-500">Empowering a greener Web3</div>
+                                            </span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Build (mega) -->
+                    <div class="relative group" data-menu>
+                        <button
+                            class="rounded-xl px-3 py-2 text-[15px] font-semibold hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-sky-400/50">Build</button>
+                        <div
+                            class="menu-panel translate-y-2 transition-transform group-hover:translate-y-0 absolute left-1/2 top-full z-30 w-[780px] -translate-x-1/2 pt-3">
+                            <div
+                                class="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-xl ring-1 ring-black/5">
+                                <div class="grid grid-cols-2 gap-0 p-4">
+                                    <div>
+                                        <div
+                                            class="px-2 pb-1 text-xs font-semibold uppercase tracking-wide text-zinc-500">
+                                            Use Cases</div>
+                                        <ul class="space-y-1">
+                                            <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#gamefi"><i
+                                                        class="fa-solid fa-gamepad mt-0.5 w-5"></i><span><b
+                                                            class="text-sm">GameFi</b>
+                                                        <div class="text-xs text-zinc-500">Empower your game</div>
+                                                    </span></a></li>
+                                            <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50"
+                                                    href="#memecoins"><i
+                                                        class="fa-solid fa-face-grin-stars mt-0.5 w-5"></i><span><b
+                                                            class="text-sm">Memecoins & Tokens</b>
+                                                        <div class="text-xs text-zinc-500">Empower your community</div>
+                                                    </span></a></li>
+                                            <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50"
+                                                    href="#community-tools"><i
+                                                        class="fa-solid fa-users-gear mt-0.5 w-5"></i><span><b
+                                                            class="text-sm">Community Tools</b>
+                                                        <div class="text-xs text-zinc-500">Engage & grow your community
+                                                        </div>
+                                                    </span></a></li>
+                                            <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#tons"><i
+                                                        class="fa-solid fa-window-restore mt-0.5 w-5"></i><span><b
+                                                            class="text-sm">TON Sites</b>
+                                                        <div class="text-xs text-zinc-500">Launch Web3‑Site on TON</div>
+                                                    </span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div
+                                            class="px-2 pb-1 text-xs font-semibold uppercase tracking-wide text-zinc-500">
+                                            For Builders</div>
+                                        <ul class="space-y-1">
+                                            <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#portal"><i
+                                                        class="fa-solid fa-grid-2 mt-0.5 w-5"></i><span><b
+                                                            class="text-sm">TON Builders Portal</b>
+                                                        <div class="text-xs text-zinc-500">Find ecosystem opportunities
+                                                            for you</div>
+                                                    </span></a></li>
+                                            <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#start"><i
+                                                        class="fa-solid fa-check-double mt-0.5 w-5"></i><span><b
+                                                            class="text-sm">Getting Started</b>
+                                                        <div class="text-xs text-zinc-500">Start building on TON</div>
+                                                    </span></a></li>
+                                            <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#docs"><i
+                                                        class="fa-regular fa-file-lines mt-0.5 w-5"></i><span><b
+                                                            class="text-sm">Documentation</b>
+                                                        <div class="text-xs text-zinc-500">Find all the answers</div>
+                                                    </span></a></li>
+                                            <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50"
+                                                    href="#miniapps"><i
+                                                        class="fa-solid fa-robot mt-0.5 w-5"></i><span><b
+                                                            class="text-sm">Telegram Mini Apps</b>
+                                                        <div class="text-xs text-zinc-500">Unlock access to Telegram
+                                                            Audience</div>
+                                                    </span></a></li>
+                                            <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50"
+                                                    href="#devforum"><i
+                                                        class="fa-regular fa-comments mt-0.5 w-5"></i><span><b
+                                                            class="text-sm">Dev Forum</b>
+                                                        <div class="text-xs text-zinc-500">Ask, post and comment</div>
+                                                    </span></a></li>
+                                            <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50"
+                                                    href="#devchats"><i
+                                                        class="fa-solid fa-comments mt-0.5 w-5"></i><span><b
+                                                            class="text-sm">Dev Chats</b>
+                                                        <div class="text-xs text-zinc-500">Join developers chats</div>
+                                                    </span></a></li>
+                                            <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#bounty"><i
+                                                        class="fa-solid fa-bug mt-0.5 w-5"></i><span><b
+                                                            class="text-sm">Bug Bounty</b>
+                                                        <div class="text-xs text-zinc-500">Find bugs for rewards</div>
+                                                    </span></a></li>
+                                            <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#job"><i
+                                                        class="fa-solid fa-briefcase mt-0.5 w-5"></i><span><b
+                                                            class="text-sm">Find a Job</b>
+                                                        <div class="text-xs text-zinc-500">See available positions</div>
+                                                    </span></a></li>
+                                            <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#talent"><i
+                                                        class="fa-regular fa-star mt-0.5 w-5"></i><span><b
+                                                            class="text-sm">Find a Talent</b>
+                                                        <div class="text-xs text-zinc-500">Skilled professionals and
+                                                            agencies</div>
+                                                    </span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Community -->
+                    <div class="relative group" data-menu>
+                        <button
+                            class="rounded-xl px-3 py-2 text-[15px] font-semibold hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-sky-400/50">Community</button>
+                        <div
+                            class="menu-panel translate-y-2 transition-transform group-hover:translate-y-0 absolute left-1/2 top-full z-30 w-[380px] -translate-x-1/2 pt-3">
+                            <div
+                                class="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-xl ring-1 ring-black/5">
+                                <ul class="divide-y divide-zinc-100 p-1">
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#communities"><i
+                                                class="fa-solid fa-people-group mt-0.5 w-5"></i><span><b
+                                                    class="text-sm">Communities</b>
+                                                <div class="text-xs text-zinc-500">Explore and collaborate</div>
+                                            </span></a></li>
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#blog"><i
+                                                class="fa-regular fa-newspaper mt-0.5 w-5"></i><span><b
+                                                    class="text-sm">Blog</b>
+                                                <div class="text-xs text-zinc-500">Read articles from the community
+                                                </div>
+                                            </span></a></li>
+                                    <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#careers"><i
+                                                class="fa-solid fa-briefcase mt-0.5 w-5"></i><span><b
+                                                    class="text-sm">Careers</b>
+                                                <div class="text-xs text-zinc-500">See available positions</div>
+                                            </span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Right: Language button (visible on all screens) -->
+                <button id="langBtn"
+                    class="inline-flex items-center gap-2 rounded-xl px-3 py-2 text-[15px] font-semibold hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-sky-400/50"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fa-solid fa-globe h-5 w-5"></i>
+                    <span class="hidden sm:inline">Eng</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile link row under header -->
+        <div class="md:hidden border-t border-zinc-200/70 bg-white">
+            <div class="mx-auto max-w-7xl px-4 py-2 grid grid-cols-4 gap-2 text-center">
+                <button class="rounded-xl bg-zinc-100 px-3 py-2 text-sm font-semibold"
+                    data-mobile-open="#mobilePanel-use">Use</button>
+                <button class="rounded-xl bg-zinc-100 px-3 py-2 text-sm font-semibold"
+                    data-mobile-open="#mobilePanel-learn">Learn</button>
+                <button class="rounded-xl bg-zinc-100 px-3 py-2 text-sm font-semibold"
+                    data-mobile-open="#mobilePanel-build">Build</button>
+                <button class="rounded-xl bg-zinc-100 px-3 py-2 text-sm font-semibold"
+                    data-mobile-open="#mobilePanel-community">Community</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- DESKTOP language dropdown -->
+    <div id="langDropdown"
+        class="hidden md:flex menu-panel fixed inset-x-0 top-16 z-40 justify-center pt-3 translate-y-2 transition-transform">
+        <div class="w-[420px] rounded-2xl border border-zinc-200 bg-white shadow-2xl ring-1 ring-black/5 p-2">
+            <div class="px-3 py-2 text-center text-sm font-semibold">Choose your language</div>
+            <ul class="max-h-[70vh] overflow-y-auto p-1"></ul>
+        </div>
+    </div>
+
+    <!-- OVERLAY (for language only) -->
+    <div id="overlay" class="fixed inset-0 z-30 hidden bg-black/40 opacity-0 transition-opacity"></div>
+
+    <!-- MOBILE LANGUAGE BOTTOM SHEET -->
+    <div id="langSheetWrap" class="hidden md:hidden fixed inset-0 z-50">
+        <div class="absolute inset-0 bg-black/40 opacity-0 transition-opacity" aria-hidden="true"></div>
+        <div class="sheet absolute inset-x-0 bottom-0 max-h-[80vh] overflow-hidden rounded-t-2xl bg-white shadow-2xl">
+            <div class="sticky top-0 flex items-center justify-between border-b border-zinc-200 p-4">
+                <div class="text-sm font-semibold">Choose your language</div>
+                <button id="closeLangSheet" class="rounded-lg p-2 hover:bg-zinc-100" aria-label="Close sheet"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <ul id="mobileLangList" class="max-h-[70vh] overflow-y-auto p-2"></ul>
+            <div class="p-4 pb-6 text-center text-xs text-zinc-500">Tap a language to switch</div>
+        </div>
+    </div>
+
+    <!-- MOBILE PANELS (open below buttons) -->
+    <div id="mobilePanel-use" class="md:hidden hidden px-4 pt-2">
+        <div class="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-xl">
+            <ul class="divide-y divide-zinc-100 p-1">
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#wallet"><span
+                            class="mt-0.5 text-zinc-700"><i class="fa-solid fa-wallet w-5"></i></span><span><span
+                                class="block text-sm font-semibold">Get a Wallet</span><span
+                                class="block text-xs text-zinc-500">Start using TON</span></span></a></li>
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#toncoin"><span
+                            class="mt-0.5 text-zinc-700"><i class="fa-solid fa-coins w-5"></i></span><span><span
+                                class="block text-sm font-semibold">Get Toncoin</span><span
+                                class="block text-xs text-zinc-500">Buy with card or exchange</span></span></a></li>
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#stake"><span
+                            class="mt-0.5 text-zinc-700"><i class="fa-solid fa-shield-halved w-5"></i></span><span><span
+                                class="block text-sm font-semibold">Stake</span><span
+                                class="block text-xs text-zinc-500">Contribute to security</span></span></a></li>
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#payments"><span
+                            class="mt-0.5 text-zinc-700"><i class="fa-regular fa-credit-card w-5"></i></span><span><span
+                                class="block text-sm font-semibold">Accept Payments</span><span
+                                class="block text-xs text-zinc-500">Directly and worldwide</span></span></a></li>
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#apps"><span
+                            class="mt-0.5 text-zinc-700"><i
+                                class="fa-solid fa-table-cells-large w-5"></i></span><span><span
+                                class="block text-sm font-semibold">Apps & Services</span><span
+                                class="block text-xs text-zinc-500">Explore TON ecosystem</span></span></a></li>
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#domains"><span
+                            class="mt-0.5 text-zinc-700"><i class="fa-solid fa-globe w-5"></i></span><span><span
+                                class="block text-sm font-semibold">Domains</span><span
+                                class="block text-xs text-zinc-500">Easy‑to‑remember address</span></span></a></li>
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#usdt"><span
+                            class="mt-0.5 text-zinc-700"><i class="fa-solid fa-dollar-sign w-5"></i></span><span><span
+                                class="block text-sm font-semibold">USDT on TON</span><span
+                                class="block text-xs text-zinc-500">Explore stablecoin usage</span></span></a></li>
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#bridges"><span
+                            class="mt-0.5 text-zinc-700"><i class="fa-solid fa-bridge w-5"></i></span><span><span
+                                class="block text-sm font-semibold">Cross‑Chain Bridges</span><span
+                                class="block text-xs text-zinc-500">Transfer assets from other
+                                networks</span></span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="mobilePanel-learn" class="md:hidden hidden px-4 pt-2">
+        <div class="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-xl">
+            <ul class="grid grid-cols-1 divide-y divide-zinc-100 p-1">
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#concept"><i
+                            class="fa-regular fa-circle-question mt-0.5 w-5"></i><span><b class="text-sm">TON
+                                Concept</b>
+                            <div class="text-xs text-zinc-500">Introduction</div>
+                        </span></a></li>
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#decentralized"><i
+                            class="fa-solid fa-diagram-project mt-0.5 w-5"></i><span><b class="text-sm">Decentralized
+                                Network</b>
+                            <div class="text-xs text-zinc-500">Self‑governance blockchain</div>
+                        </span></a></li>
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#roadmap"><i
+                            class="fa-solid fa-chart-line mt-0.5 w-5"></i><span><b class="text-sm">Roadmap</b>
+                            <div class="text-xs text-zinc-500">History, status and the future</div>
+                        </span></a></li>
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#tonstat"><i
+                            class="fa-solid fa-chart-area mt-0.5 w-5"></i><span><b class="text-sm">TonStat</b>
+                            <div class="text-xs text-zinc-500">Key metrics of the network</div>
+                        </span></a></li>
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#mining"><i
+                            class="fa-solid fa-mountain-sun mt-0.5 w-5"></i><span><b class="text-sm">History of
+                                Mining</b>
+                            <div class="text-xs text-zinc-500">How Toncoin was evolved</div>
+                        </span></a></li>
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#toncoin-learn"><i
+                            class="fa-solid fa-coins mt-0.5 w-5"></i><span><b class="text-sm">Toncoin</b>
+                            <div class="text-xs text-zinc-500">Use of the coin</div>
+                        </span></a></li>
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#validators"><i
+                            class="fa-solid fa-star-of-life mt-0.5 w-5"></i><span><b class="text-sm">Validators</b>
+                            <div class="text-xs text-zinc-500">Decentralization approach</div>
+                        </span></a></li>
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#whitepaper"><i
+                            class="fa-regular fa-file-lines mt-0.5 w-5"></i><span><b class="text-sm">White Paper</b>
+                            <div class="text-xs text-zinc-500">TON fundamentals</div>
+                        </span></a></li>
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#sustain"><i
+                            class="fa-solid fa-leaf mt-0.5 w-5"></i><span><b class="text-sm">Sustainability</b>
+                            <div class="text-xs text-zinc-500">Empowering a greener Web3</div>
+                        </span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="mobilePanel-build" class="md:hidden hidden px-4 pt-2">
+        <div class="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-xl">
+            <div class="grid grid-cols-1 gap-0 p-1">
+                <div>
+                    <div class="px-2 pb-1 text-xs font-semibold uppercase tracking-wide text-zinc-500">Use Cases</div>
+                    <ul class="space-y-1">
+                        <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#gamefi"><i
+                                    class="fa-solid fa-gamepad mt-0.5 w-5"></i><span><b class="text-sm">GameFi</b>
+                                    <div class="text-xs text-zinc-500">Empower your game</div>
+                                </span></a></li>
+                        <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#memecoins"><i
+                                    class="fa-solid fa-face-grin-stars mt-0.5 w-5"></i><span><b
+                                        class="text-sm">Memecoins & Tokens</b>
+                                    <div class="text-xs text-zinc-500">Empower your community</div>
+                                </span></a></li>
+                        <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#community-tools"><i
+                                    class="fa-solid fa-users-gear mt-0.5 w-5"></i><span><b class="text-sm">Community
+                                        Tools</b>
+                                    <div class="text-xs text-zinc-500">Engage & grow your community</div>
+                                </span></a></li>
+                        <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#tons"><i
+                                    class="fa-solid fa-window-restore mt-0.5 w-5"></i><span><b class="text-sm">TON
+                                        Sites</b>
+                                    <div class="text-xs text-zinc-500">Launch Web3‑Site on TON</div>
+                                </span></a></li>
+                    </ul>
+                </div>
+                <div class="mt-2">
+                    <div class="px-2 pb-1 text-xs font-semibold uppercase tracking-wide text-zinc-500">For Builders
+                    </div>
+                    <ul class="space-y-1">
+                        <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#portal"><i
+                                    class="fa-solid fa-grid-2 mt-0.5 w-5"></i><span><b class="text-sm">TON Builders
+                                        Portal</b>
+                                    <div class="text-xs text-zinc-500">Find ecosystem opportunities for you</div>
+                                </span></a></li>
+                        <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#start"><i
+                                    class="fa-solid fa-check-double mt-0.5 w-5"></i><span><b class="text-sm">Getting
+                                        Started</b>
+                                    <div class="text-xs text-zinc-500">Start building on TON</div>
+                                </span></a></li>
+                        <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#docs"><i
+                                    class="fa-regular fa-file-lines mt-0.5 w-5"></i><span><b
+                                        class="text-sm">Documentation</b>
+                                    <div class="text-xs text-zinc-500">Find all the answers</div>
+                                </span></a></li>
+                        <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#miniapps"><i
+                                    class="fa-solid fa-robot mt-0.5 w-5"></i><span><b class="text-sm">Telegram Mini
+                                        Apps</b>
+                                    <div class="text-xs text-zinc-500">Unlock access to Telegram Audience</div>
+                                </span></a></li>
+                        <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#devforum"><i
+                                    class="fa-regular fa-comments mt-0.5 w-5"></i><span><b class="text-sm">Dev Forum</b>
+                                    <div class="text-xs text-zinc-500">Ask, post and comment</div>
+                                </span></a></li>
+                        <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#devchats"><i
+                                    class="fa-solid fa-comments mt-0.5 w-5"></i><span><b class="text-sm">Dev Chats</b>
+                                    <div class="text-xs text-zinc-500">Join developers chats</div>
+                                </span></a></li>
+                        <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#bounty"><i
+                                    class="fa-solid fa-bug mt-0.5 w-5"></i><span><b class="text-sm">Bug Bounty</b>
+                                    <div class="text-xs text-zinc-500">Find bugs for rewards</div>
+                                </span></a></li>
+                        <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#job"><i
+                                    class="fa-solid fa-briefcase mt-0.5 w-5"></i><span><b class="text-sm">Find a Job</b>
+                                    <div class="text-xs text-zinc-500">See available positions</div>
+                                </span></a></li>
+                        <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#talent"><i
+                                    class="fa-regular fa-star mt-0.5 w-5"></i><span><b class="text-sm">Find a Talent</b>
+                                    <div class="text-xs text-zinc-500">Skilled professionals and agencies</div>
+                                </span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobilePanel-community" class="md:hidden hidden px-4 pt-2">
+        <div class="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-xl">
+            <ul class="divide-y divide-zinc-100 p-1">
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#communities"><i
+                            class="fa-solid fa-people-group mt-0.5 w-5"></i><span><b class="text-sm">Communities</b>
+                            <div class="text-xs text-zinc-500">Explore and collaborate</div>
+                        </span></a></li>
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#blog"><i
+                            class="fa-regular fa-newspaper mt-0.5 w-5"></i><span><b class="text-sm">Blog</b>
+                            <div class="text-xs text-zinc-500">Read articles from the community</div>
+                        </span></a></li>
+                <li><a class="flex gap-3 rounded-xl p-3 hover:bg-zinc-50" href="#careers"><i
+                            class="fa-solid fa-briefcase mt-0.5 w-5"></i><span><b class="text-sm">Careers</b>
+                            <div class="text-xs text-zinc-500">See available positions</div>
+                        </span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // ------- Utilities -------
+        const qs = (s, el = document) => el.querySelector(s);
+        const qsa = (s, el = document) => [...el.querySelectorAll(s)];
+
+        // Desktop dropdowns: make sure translate-y toggles with open
+        qsa('[data-menu]').forEach(wrap => {
+            const btn = wrap.querySelector('button');
+            const panel = wrap.querySelector('.menu-panel');
+            const open = () => { wrap.setAttribute('data-open', ''); panel?.classList.add('translate-y-0'); };
+            const close = () => { wrap.removeAttribute('data-open'); panel?.classList.remove('translate-y-0'); };
+            wrap.addEventListener('mouseenter', open);
+            wrap.addEventListener('mouseleave', close);
+            btn.addEventListener('focusin', open);
+            btn.addEventListener('blur', () => setTimeout(close, 100));
+        });
+
+        // ------- Language dropdown / sheet -------
+        const langBtn = qs('#langBtn');
+        const langDropdown = qs('#langDropdown');
+        const overlay = qs('#overlay');
+
+        const LANGS = ['English', 'Español', 'हिन्दी', '中文', 'Português', 'Русский', 'Bahasa Indonesia'];
+
+        function buildLangList(ul) {
+            ul.innerHTML = '';
+            LANGS.forEach(l => {
+                const li = document.createElement('li');
+                li.innerHTML = `<button class="w-full text-left rounded-xl px-4 py-3 text-sm hover:bg-zinc-100">${l}</button>`;
+                ul.appendChild(li);
+            })
+        }
+        buildLangList(qs('#langDropdown ul'));
+        buildLangList(qs('#mobileLangList'));
+
+        function isDesktop() { return window.matchMedia('(min-width: 768px)').matches; }
+
+        function openDesktopLang() {
+            langDropdown.classList.remove('hidden');
+            langDropdown.classList.add('menu-open', 'translate-y-0');
+            overlay.classList.remove('hidden');
+            requestAnimationFrame(() => overlay.classList.add('opacity-100'));
+            langBtn.setAttribute('aria-expanded', 'true');
+        }
+        function closeDesktopLang() {
+            langDropdown.classList.remove('menu-open', 'translate-y-0');
+            overlay.classList.remove('opacity-100');
+            setTimeout(() => { langDropdown.classList.add('hidden'); overlay.classList.add('hidden'); }, 180);
+            langBtn.setAttribute('aria-expanded', 'false');
+        }
+
+        // Hover to open (desktop only)
+        function attachLangHover() {
+            if (!isDesktop()) return;
+            langBtn.addEventListener('mouseenter', openDesktopLang);
+            langBtn.addEventListener('mouseleave', () => setTimeout(() => { if (!langDropdown.matches(':hover')) closeDesktopLang(); }, 80));
+            langDropdown.addEventListener('mouseenter', openDesktopLang);
+            langDropdown.addEventListener('mouseleave', () => setTimeout(closeDesktopLang, 80));
+        }
+        attachLangHover();
+        window.addEventListener('resize', () => {
+            // cleanup on breakpoint change
+            closeDesktopLang();
+        });
+
+        // Click behavior: desktop => dropdown; mobile => bottom sheet
+        const langSheetWrap = qs('#langSheetWrap');
+        const sheetBackdrop = qs('#langSheetWrap > div:first-child');
+        const closeLangSheet = qs('#closeLangSheet');
+
+        function openLangSheet() {
+            langSheetWrap.classList.remove('hidden');
+            requestAnimationFrame(() => {
+                langSheetWrap.classList.add('sheet-open');
+                sheetBackdrop.classList.add('opacity-100');
+            });
+        }
+        function closeLangSheetFn() {
+            langSheetWrap.classList.remove('sheet-open');
+            sheetBackdrop.classList.remove('opacity-100');
+            setTimeout(() => langSheetWrap.classList.add('hidden'), 250);
+        }
+
+        langBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (isDesktop()) {
+                const open = langDropdown.classList.contains('menu-open');
+                open ? closeDesktopLang() : openDesktopLang();
+            } else {
+                openLangSheet();
+            }
+        });
+
+        closeLangSheet?.addEventListener('click', closeLangSheetFn);
+        sheetBackdrop?.addEventListener('click', closeLangSheetFn);
+
+        overlay.addEventListener('click', closeDesktopLang);
+        window.addEventListener('keydown', (e) => { if (e.key === 'Escape') { closeDesktopLang(); closeLangSheetFn(); } });
+
+        // ------- Mobile link row: open panels on click -------
+        qsa('[data-mobile-open]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetSel = btn.getAttribute('data-mobile-open');
+                const target = qs(targetSel);
+                // Close all others
+                qsa('[id^="mobilePanel-"]').forEach(p => { if (p !== target) p.classList.add('hidden'); });
+                // Toggle this one
+                target.classList.toggle('hidden');
+                // Scroll into view if opened
+                if (!target.classList.contains('hidden')) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+
+</html>

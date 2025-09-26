@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ton</title>
+    <link rel="canonical" href="https://ton.org/" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Styles & Scripts -->
+    <link rel="stylesheet" href="/docs/Style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+</head>
+
+<body class="overflow-x-hidden">
+
+
+    <div id="bottomToTopScroll"></div>
+
+
+    <section class="relative overflow-x-hidden">
+        <img src="/docs/assets/images/dotted.png" class="absolute top-0 left-0 md:max-w-[15rem] w-full opacity-20"
+            alt="">
+        <img src="/docs/assets/images/dotted.png"
+            class="absolute md:block hidden top-0 right-0 max-w-[15rem] w-full opacity-20" alt="">
+        <div
+            class="bg-gradient-to-br from-[#FFF3C4] via-[#D4AF37] to-[#8C6A1C] w-full max-w-sm opacity-30 h-40 rounded-full absolute top-20 right-0 z-[-1] blur-3xl">
+        </div>
+
+        <div
+            class="bg-gradient-to-br from-[#FFF3C4] via-[#D4AF37] to-[#8C6A1C] w-full max-w-sm opacity-30 h-40 rounded-full absolute top-20 left-0 z-[-1] blur-3xl md:block hidden">
+        </div>
+
+        <div id="navbar"></div>
+
+        <section id="trust-compliance"
+            class="relative overflow-hidden md:mt-36 mt-28 md:min-h-[calc(100vh-10rem)] min-h-[calc(100vh-5rem)] bg-center bg-cover py-10 md:pb-20">
+
+            <!-- subtle decorative glows -->
+            <div class="pointer-events-none absolute inset-0">
+                <div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full blur-3xl opacity-20"
+                    style="background: radial-gradient(circle at 30% 30%, #D4AF37 0%, transparent 60%);"></div>
+                <div class="absolute -bottom-24 -right-24 w-[28rem] h-[28rem] rounded-full blur-3xl opacity-10"
+                    style="background: radial-gradient(circle at 70% 70%, #8C6A1C 0%, transparent 60%);"></div>
+            </div>
+
+            <!-- Content -->
+            <div
+                class="relative z-20 mx-auto max-w-7xl px-5 sm:px-6 lg:px-12 md:min-h-[calc(100vh-10rem)] min-h-[calc(100vh-5rem)] flex flex-col gap-6 items-center justify-center">
+
+                <!-- Compliance / BrokerCheck badge -->
+                <div class="md:max-w-4xl w-full flex justify-center">
+                    <a href="https://brokercheck.finra.org/" target="_blank" rel="noopener"
+                        class="group inline-flex items-center gap-3 rounded-full border border-zinc-700/50 bg-white/5 backdrop-blur px-4 py-2 shadow-sm hover:shadow transition">
+                        <div class="flex items-center gap-2">
+                            <span class="text-sm font-medium text-zinc-600">
+                                Verify on <span class="font-semibold text-[#D4AF37]">FINRA BrokerCheck</span>
+                            </span>
+                        </div>
+                        <svg class="w-4 h-4 text-zinc-400 group-hover:text-zinc-200 transition" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Hero Copy -->
+                <div data-aos="fade-up" class="md:max-w-4xl w-full text-center">
+                    <h1
+                        class="max-w-5xl mx-auto font-semibold text-3xl md:text-6xl leading-tight md:mb-6 text-zinc-800">
+                        Fiduciary Wealth Management — <span class="text-[#D4AF37]">Built for Trust</span>
+                    </h1>
+
+                    <p data-aos="fade-up" data-aos-delay="100" class="text-zinc-600 md:mb-8 mb-8 text-lg">
+                        Nightgale Wealth is an Independent Registered Investment Adviser delivering disciplined
+                        portfolio management,
+                        insurance solutions, and retirement planning. Our Art-Deco aesthetic meets rigorous compliance
+                        and
+                        transparent, client-first advice.
+                    </p>
+
+                    <div data-aos="fade-up" data-aos-delay="150"
+                        class="flex items-center justify-center flex-col md:flex-row gap-4">
+                        <a href="#services"
+                            class="w-full md:w-auto tracking-wider py-3.5 md:py-4 px-7 md:px-12 font-medium text-zinc-900 md:rounded-sm rounded-2xl border-2 border-[#D4AF37] bg-[#D4AF37] hover:opacity-85 transition-all duration-300">
+                            Explore Services
+                        </a>
+                        <a href="#disclosures"
+                            class="w-full md:w-auto tracking-wider py-3.5 md:py-4 px-7 md:px-10 font-medium text-zinc-700 md:rounded-sm rounded-2xl border-2 border-zinc-700/70 hover:border-zinc-500 hover:bg-white/5 transition-all duration-300">
+                            View Disclosures
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Feature Grid -->
+                <div
+                    class="grid grid-cols-1 md:mt-10 md:grid-cols-2 lg:grid-cols-4 md:mt-0 mt-8 gap-4 max-w-lg mx-auto md:max-w-2xl lg:max-w-full">
+
+                    <!-- Large Card: Trust & Compliance -->
+                    <div data-aos="fade-up" class="relative w-full h-auto md:col-span-2">
+                        <div
+                            class="rounded-2xl flex justify-between flex-row flex-wrap bg-[#0B1220] border border-zinc-800/70">
+                            <div class="p-6 xl:p-8 w-full md:w-1/2">
+                                <div class="block">
+                                    <i class="fa-solid fa-scale-balanced text-[#D4AF37] text-2xl"></i>
+                                </div>
+                                <h3 class="text-lg font-bold xl:text-xl text-zinc-100 py-5 w-full xl:w-72">
+                                    Our Commitment to Trust & Compliance
+                                </h3>
+                                <p class="text-sm font-normal text-zinc-300 w-full mb-8 xl:w-80">
+                                    Prominent BrokerCheck links and SEC-required disclosures on every page.
+                                    Clear, documented processes that put your interests first—always.
+                                </p>
+                                <a href="#standards"
+                                    class="py-2 px-5 border border-zinc-600 rounded-full gap-2 text-xs text-zinc-100 font-semibold inline-flex items-center justify-center hover:bg-white/5 transition">
+                                    Learn About Our Standards
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="relative hidden md:block md:w-[40%]">
+                                <div class="h-full w-full rounded-2xl">
+                                    <!-- Optional decorative image or abstract pattern -->
+                                    <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop"
+                                        alt="Art Deco motif"
+                                        class="h-full w-full object-cover rounded-tr-2xl rounded-br-2xl opacity-70">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Management -->
+                    <div data-aos="fade-up" data-aos-delay="75" class="relative w-full h-auto">
+                        <div class="rounded-2xl p-6 xl:p-8 h-full bg-[#111827] border border-zinc-800/70">
+                            <div class="block">
+                                <i class="fa-solid fa-chart-line text-[#D4AF37] text-2xl"></i>
+                            </div>
+                            <h3 class="py-5 text-zinc-100 text-lg font-bold xl:text-xl">Portfolio Management</h3>
+                            <p class="text-sm font-normal text-zinc-300 mb-8">
+                                Evidence-based strategies, risk controls, and rebalancing designed to keep you on track
+                                through cycles.
+                            </p>
+                            <a href="#portfolio"
+                                class="py-2 px-5 border border-zinc-600 rounded-full gap-2 text-xs text-zinc-100 font-semibold inline-flex items-center justify-center hover:bg-white/5 transition">
+                                How We Invest
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Financial & Retirement Planning -->
+                    <div data-aos="fade-up" data-aos-delay="150" class="relative w-full h-auto">
+                        <div class="rounded-2xl p-6 xl:p-8 h-full bg-[#111827] border border-zinc-800/70">
+                            <div class="block">
+                                <i class="fa-solid fa-piggy-bank text-[#D4AF37] text-2xl"></i>
+                            </div>
+                            <h3 class="py-5 text-zinc-100 text-lg font-bold xl:text-xl">Financial & Retirement Planning
+                            </h3>
+                            <p class="text-sm font-normal text-zinc-300 mb-8">
+                                Tax-aware, goal-based plans spanning income, savings, and withdrawal strategies—built
+                                around your timeline.
+                            </p>
+                            <a href="#planning"
+                                class="py-2 px-5 border border-zinc-600 rounded-full gap-2 text-xs text-zinc-100 font-semibold inline-flex items-center justify-center hover:bg-white/5 transition">
+                                Plan Your Future
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- tiny note (optional; keep full legal text in the site footer) -->
+                <p class="text-[11px] text-zinc-500 mt-4 text-center">
+                    Nightgale Wealth is a Registered Investment Adviser. Advisory services offered only where properly
+                    registered or exempt.
+                    See full disclosures in the site footer.
+                </p>
+            </div>
+        </section>
+
+
+    </section>
+
+    <div data-aos="fade-up" class="max-w-7xl overflow-hidden w-full p-4 mx-auto md:mt-16 mt-10">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper ">
+
+                <div class="swiper-slide">
+                    <div class="w-full flex-col flex items-center justify-center gap-2 text-center">
+                        <h2 class="counter md:text-4xl text-3xl text-zinc-700 font-semibold">25+</h2>
+                        <p class="text-zinc-700 font-medium">Years of Combined Experience</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="w-full flex-col flex items-center justify-center gap-2 text-center">
+                        <h2 class="counter md:text-4xl text-3xl text-zinc-700 font-semibold">150+</h2>
+                        <p class="text-zinc-700 font-medium">Client Households</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="w-full flex-col flex items-center justify-center gap-2 text-center">
+                        <h2 class="counter md:text-4xl text-3xl text-zinc-700 font-semibold">3</h2>
+                        <p class="text-zinc-700 font-medium">Core Services</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="w-full flex-col flex items-center justify-center gap-2 text-center">
+                        <h2 class="counter md:text-4xl text-3xl text-zinc-700 font-semibold">10+</h2>
+                        <p class="text-zinc-700 font-medium">States Served</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="w-full flex-col flex items-center justify-center gap-2 text-center">
+                        <h2 class="counter md:text-4xl text-3xl text-zinc-700 font-semibold">24h</h2>
+                        <p class="text-zinc-700 font-medium">Average Response Time</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="w-full flex-col flex items-center justify-center gap-2 text-center">
+                        <h2 class="counter md:text-4xl text-3xl text-zinc-700 font-semibold">100%</h2>
+                        <p class="text-zinc-700 font-medium">Fiduciary Standard</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section id="features" class="max-w-7xl w-full  overflow-hidden mx-auto md:mt-24 mt-10 p-5">
+
+        <!-- Section Heading -->
+        <p data-aos="fade-up" class="text-center text-[#8C6A1C] pb-2">
+            <span
+                class="py-1 px-4 rounded-full text-xs font-medium text-[#8C6A1C] bg-[#FFF3C4] border border-[#D4AF37]/30">
+                Trusted, Client-First Features
+            </span>
+        </p>
+
+        <h2 data-aos="fade-up"
+            class="text-center md:text-5xl text-2xl max-w-3xl capitalize leading-tight mx-auto font-semibold text-zinc-800">
+            Everything you need to <span class="text-[#D4AF37]">plan, invest, and retire</span> with confidence
+        </h2>
+
+        <p data-aos="fade-up" class="text-zinc-600 max-w-3xl mx-auto pt-3 text-center">
+            Nightgale Wealth provides disciplined portfolio management, tax-aware financial &amp; retirement planning,
+            and clear insurance guidance—designed to protect and grow your wealth while upholding strict fiduciary
+            standards.
+        </p>
+
+        <div class="grid md:grid-cols-3 grid-cols-1 md:mt-20 mt-14 md:gap-y-14 gap-5">
+
+            <!-- Portfolio Management -->
+            <div data-aos="fade-up">
+                <div class="flex flex-col justify-center p-5 md:py-10">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center bg-[#FFF7D6]">
+                        <i class="fa-solid fa-chart-line text-xl text-[#8C6A1C]"></i>
+                    </div>
+                    <h2 class="text-xl mt-6 font-medium text-zinc-800">Portfolio Management</h2>
+                    <p class="text-zinc-600 mt-1 text-sm">
+                        Evidence-based strategies, risk controls, and rebalancing to keep you aligned with your goals
+                        through cycles.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Fiduciary & Compliance (highlight card) -->
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div
+                    class="flex flex-col rounded-xl justify-center p-5 md:py-10 bg-[#0B1220] border border-zinc-800/60">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center bg-white">
+                        <i class="fa-solid fa-scale-balanced text-xl text-[#8C6A1C]"></i>
+                    </div>
+                    <h2 class="text-xl mt-6 font-medium text-zinc-100">Fiduciary Standard &amp; Compliance</h2>
+                    <p class="text-zinc-300 mt-1 text-sm">
+                        Your interests first—prominent BrokerCheck links, SEC-required disclosures, and transparent
+                        processes on every page.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Financial & Retirement Planning -->
+            <div data-aos="fade-up" data-aos-delay="200">
+                <div class="flex flex-col justify-center p-5 md:py-10">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center bg-[#FFF7D6]">
+                        <i class="fa-solid fa-piggy-bank text-xl text-[#8C6A1C]"></i>
+                    </div>
+                    <h2 class="text-xl mt-6 font-medium text-zinc-800">Financial &amp; Retirement Planning</h2>
+                    <p class="text-zinc-600 mt-1 text-sm">
+                        Tax-aware plans for saving, investing, income, and withdrawals—tailored to your timeline and
+                        risk profile.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Insurance Solutions -->
+            <div data-aos="fade-up">
+                <div class="flex flex-col justify-center p-5 md:py-10">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center bg-[#FFF7D6]">
+                        <i class="fa-solid fa-shield-halved text-xl text-[#8C6A1C]"></i>
+                    </div>
+                    <h2 class="text-xl mt-6 font-medium text-zinc-800">Insurance Solutions</h2>
+                    <p class="text-zinc-600 mt-1 text-sm">
+                        Clear guidance on coverage needs—protecting income, assets, and legacy as part of a holistic
+                        plan.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Transparent Fees -->
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div class="flex flex-col justify-center p-5 md:py-10">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center bg-[#FFF7D6]">
+                        <i class="fa-solid fa-file-invoice-dollar text-xl text-[#8C6A1C]"></i>
+                    </div>
+                    <h2 class="text-xl mt-6 font-medium text-zinc-800">Transparent, Simple Fees</h2>
+                    <p class="text-zinc-600 mt-1 text-sm">
+                        Straightforward pricing with no hidden commissions—so you always know what you pay and why.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ongoing Reviews -->
+            <div data-aos="fade-up" data-aos-delay="200">
+                <div class="flex flex-col justify-center p-5 md:py-10">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center bg-[#FFF7D6]">
+                        <i class="fa-solid fa-calendar-check text-xl text-[#8C6A1C]"></i>
+                    </div>
+                    <h2 class="text-xl mt-6 font-medium text-zinc-800">Ongoing Reviews &amp; Support</h2>
+                    <p class="text-zinc-600 mt-1 text-sm">
+                        Regular check-ins, portfolio updates, and responsive guidance as your life and markets evolve.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="relative overflow-hidden  overflow-hidden md:mt-24 mt:16 px-5">
+        <div class="max-w-7xl mx-auto">
+            <!-- eyebrow -->
+            <p data-aos="fade-up" class="text-center pb-2">
+                <span
+                    class="inline-block py-1 px-4 rounded-full text-xs font-medium text-[#8C6A1C] bg-[#FFF7D6] border border-[#D4AF37]/30">
+                    About Nightgale Wealth
+                </span>
+            </p>
+
+            <!-- headline -->
+            <h2 data-aos="fade-up"
+                class="text-center md:text-5xl text-2xl max-w-4xl leading-tight mx-auto font-semibold text-zinc-900">
+                Distinguished Guidance. <span class="text-[#D4AF37]">Enduring Integrity.</span>
+            </h2>
+
+            <!-- deco divider -->
+            <div class="mx-auto mt-6 w-44 h-px bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent"></div>
+
+            <!-- content card -->
+            <div
+                class="relative mx-auto mt-10 grid md:grid-cols-12 grid-cols-1 gap-6 rounded-2xl border border-zinc-200/70 bg-white/70 backdrop-blur-sm shadow-sm">
+
+                <!-- left copy -->
+                <div class="md:col-span-7 p-6 md:p-10">
+                    <p data-aos="fade-up" class="text-zinc-700 text-lg leading-relaxed">
+                        Nightgale Wealth Management is a distinguished investment advisory firm dedicated to guiding
+                        clients through
+                        comprehensive <span class="font-medium text-zinc-900">portfolio management</span>, tailored
+                        <span class="font-medium text-zinc-900">strategic financial &amp; retirement planning</span>,
+                        and <span class="font-medium text-zinc-900">insurance solutions</span>.
+                    </p>
+                    <p data-aos="fade-up" data-aos-delay="100" class="text-zinc-700 text-lg leading-relaxed mt-4">
+                        Our advisory firm upholds an established <span class="font-medium text-zinc-900">Code of
+                            Ethics</span> with a steadfast commitment to
+                        <span class="font-medium text-zinc-900">integrity</span> and <span
+                            class="font-medium text-zinc-900">transparency</span>, setting us apart in the financial
+                        industry.
+                    </p>
+
+                    <!-- quick pillars -->
+                    <div class="mt-6 grid sm:grid-cols-3 grid-cols-1 gap-4">
+                        <div class="flex items-start gap-3">
+                            <span
+                                class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#FFF3C4]">
+                                <i class="fa-solid fa-chart-line text-[#8C6A1C]"></i>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-zinc-900">Portfolio Management</p>
+                                <p class="text-sm text-zinc-600">Disciplined, evidence-based process.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span
+                                class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#FFF3C4]">
+                                <i class="fa-solid fa-piggy-bank text-[#8C6A1C]"></i>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-zinc-900">Financial &amp; Retirement</p>
+                                <p class="text-sm text-zinc-600">Tax-aware plans tailored to you.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span
+                                class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#FFF3C4]">
+                                <i class="fa-solid fa-shield-halved text-[#8C6A1C]"></i>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-zinc-900">Insurance Solutions</p>
+                                <p class="text-sm text-zinc-600">Protect income, assets &amp; legacy.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTAs -->
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                        <a href="/disclosures.html"
+                            class="inline-flex items-center justify-center px-6 py-3 rounded-lg text-zinc-900 border-2 border-[#D4AF37] bg-[#D4AF37] hover:opacity-85 transition">
+                            View Disclosures
+                            <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="/contact.html"
+                            class="inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-zinc-300 text-zinc-800 hover:bg-white transition">
+                            Schedule a Call
+                        </a>
+                    </div>
+                </div>
+
+                <!-- right visual / motif -->
+                <div class="md:col-span-5 p-6 md:p-10">
+                    <div
+                        class="relative h-full w-full rounded-xl overflow-hidden bg-[#0B1220] border border-zinc-800/60">
+                        <!-- deco frame lines -->
+                        <div
+                            class="absolute top-6 left-6 h-10 w-10 border-t-2 border-l-2 border-[#D4AF37]/70 rounded-tl-sm">
+                        </div>
+                        <div
+                            class="absolute top-6 right-6 h-10 w-10 border-t-2 border-r-2 border-[#D4AF37]/70 rounded-tr-sm">
+                        </div>
+                        <div
+                            class="absolute bottom-6 left-6 h-10 w-10 border-b-2 border-l-2 border-[#D4AF37]/70 rounded-bl-sm">
+                        </div>
+                        <div
+                            class="absolute bottom-6 right-6 h-10 w-10 border-b-2 border-r-2 border-[#D4AF37]/70 rounded-br-sm">
+                        </div>
+
+                        <!-- center badge -->
+                        <div class="relative h-full w-full flex items-center justify-center text-center p-10">
+                            <div>
+                                <div
+                                    class="mx-auto w-20 h-20 rounded-full flex items-center justify-center bg-gradient-to-br from-[#FFF3C4] via-[#D4AF37] to-[#8C6A1C]">
+                                    <span class="text-zinc-900 font-black tracking-[0.15em]">NW</span>
+                                </div>
+                                <h3 class="mt-5 text-zinc-100 text-2xl font-semibold tracking-wide">Nightgale Wealth
+                                </h3>
+                                <p class="mt-2 text-zinc-300 text-sm max-w-xs mx-auto">
+                                    Independent Registered Investment Adviser • Art-Deco aesthetic, client-first advice.
+                                </p>
+                                <div
+                                    class="mx-auto mt-5 w-36 h-px bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent">
+                                </div>
+                                <a href="https://brokercheck.finra.org/"
+                                    class="mt-5 inline-flex items-center gap-2 text-sm text-zinc-200 hover:text-white transition"
+                                    target="_blank" rel="noopener">
+                                    <i class="fa-solid fa-shield-check text-[#D4AF37]"></i>
+                                    Verify on FINRA BrokerCheck
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="advisory-approach" class="relative overflow-hidden  overflow-hidden md:mt-24 mt-16 px-5">
+        <div class="max-w-7xl mx-auto">
+            <!-- Eyebrow -->
+            <p data-aos="fade-up" class="text-center pb-2">
+                <span
+                    class="inline-block py-1 px-4 rounded-full text-xs font-medium text-[#8C6A1C] bg-[#FFF7D6] border border-[#D4AF37]/30">
+                    Our Advisory Approach
+                </span>
+            </p>
+
+            <!-- Headline -->
+            <h2 data-aos="fade-up"
+                class="text-center md:text-5xl text-2xl max-w-4xl leading-tight mx-auto font-semibold text-zinc-900">
+                Tailored Strategies for Your <span class="text-[#D4AF37]">Financial Future</span>
+            </h2>
+
+            <!-- Divider -->
+            <div class="mx-auto mt-6 w-48 h-px bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent"></div>
+
+            <div class="mt-10 grid md:grid-cols-12 grid-cols-1 gap-8">
+                <!-- Left: Core Copy -->
+                <div class="md:col-span-7">
+                    <div
+                        class="rounded-2xl border border-zinc-200/70 bg-white/70 backdrop-blur-sm p-6 md:p-10 shadow-sm">
+                        <p data-aos="fade-up" class="text-zinc-700 text-lg leading-relaxed">
+                            Our investment advisors craft tailored strategies to help grow your wealth and secure your
+                            financial future.
+                            Trust our expertise to guide you through every market turn with confidence.
+                        </p>
+                        <p data-aos="fade-up" data-aos-delay="100" class="text-zinc-700 text-lg leading-relaxed mt-4">
+                            From portfolio management to retirement planning, our professional Advisory Firm provides
+                            comprehensive advice
+                            designed to meet your unique financial goals and aspirations.
+                        </p>
+
+                        <!-- Promise / Ethos -->
+                        <div data-aos="fade-up" data-aos-delay="150"
+                            class="relative mt-8 rounded-xl bg-[#0B1220] border border-zinc-800/60 text-zinc-100 p-6">
+                            <!-- Art-Deco corners -->
+                            <span
+                                class="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-[#D4AF37]/70 rounded-tl-sm"></span>
+                            <span
+                                class="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-[#D4AF37]/70 rounded-tr-sm"></span>
+                            <span
+                                class="absolute bottom-4 left-4 w-8 h-8 border-b-2 border-l-2 border-[#D4AF37]/70 rounded-bl-sm"></span>
+                            <span
+                                class="absolute bottom-4 right-4 w-8 h-8 border-b-2 border-r-2 border-[#D4AF37]/70 rounded-br-sm"></span>
+
+                            <div class="flex items-start gap-4">
+                                <span
+                                    class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#FFF3C4] via-[#D4AF37] to-[#8C6A1C]">
+                                    <i class="fa-solid fa-feather text-zinc-900"></i>
+                                </span>
+                                <div>
+                                    <p class="font-semibold tracking-wide">Our Promise</p>
+                                    <p class="text-sm text-zinc-300 mt-1">
+                                        Independent, fiduciary advice rooted in integrity and transparency—so your plan
+                                        stays clear, disciplined,
+                                        and built around what matters most to you.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTAs -->
+                        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                            <a href="/services.html"
+                                class="inline-flex items-center justify-center px-6 py-3 rounded-lg text-zinc-900 border-2 border-[#D4AF37] bg-[#D4AF37] hover:opacity-85 transition">
+                                Explore Services
+                                <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </a>
+                            <a href="/contact.html"
+                                class="inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-zinc-300 text-zinc-800 hover:bg-white transition">
+                                Schedule a Call
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Feature Cards -->
+                <div class="md:col-span-5 grid sm:grid-cols-2 grid-cols-1 gap-5">
+                    <!-- Portfolio Management -->
+                    <div data-aos="fade-up" class="rounded-xl border border-zinc-200 bg-white p-5">
+                        <div class="w-12 h-12 rounded-lg flex items-center justify-center bg-[#FFF3C4]">
+                            <i class="fa-solid fa-chart-line text-[#8C6A1C]"></i>
+                        </div>
+                        <h3 class="mt-4 font-semibold text-zinc-900">Portfolio Management</h3>
+                        <p class="text-sm text-zinc-600 mt-1">
+                            Evidence-based allocations, risk controls, and rebalancing to stay on course through market
+                            cycles.
+                        </p>
+                        <a href="/services.html#portfolio"
+                            class="inline-flex items-center gap-2 text-sm mt-3 text-[#8C6A1C] hover:opacity-80">
+                            Learn more <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Retirement Planning -->
+                    <div data-aos="fade-up" data-aos-delay="50" class="rounded-xl border border-zinc-200 bg-white p-5">
+                        <div class="w-12 h-12 rounded-lg flex items-center justify-center bg-[#FFF3C4]">
+                            <i class="fa-solid fa-compass text-[#8C6A1C]"></i>
+                        </div>
+                        <h3 class="mt-4 font-semibold text-zinc-900">Retirement Planning</h3>
+                        <p class="text-sm text-zinc-600 mt-1">
+                            Tax-aware saving and income strategies aligned to your timeline, lifestyle, and legacy
+                            goals.
+                        </p>
+                        <a href="/services.html#retirement"
+                            class="inline-flex items-center gap-2 text-sm mt-3 text-[#8C6A1C] hover:opacity-80">
+                            Plan your path <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Insurance Solutions -->
+                    <div data-aos="fade-up" data-aos-delay="100" class="rounded-xl border border-zinc-200 bg-white p-5">
+                        <div class="w-12 h-12 rounded-lg flex items-center justify-center bg-[#FFF3C4]">
+                            <i class="fa-solid fa-shield-halved text-[#8C6A1C]"></i>
+                        </div>
+                        <h3 class="mt-4 font-semibold text-zinc-900">Insurance Solutions</h3>
+                        <p class="text-sm text-zinc-600 mt-1">
+                            Clear coverage guidance to help protect income, assets, and family across life’s stages.
+                        </p>
+                        <a href="/services.html#insurance"
+                            class="inline-flex items-center gap-2 text-sm mt-3 text-[#8C6A1C] hover:opacity-80">
+                            See options <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Ongoing Guidance -->
+                    <div data-aos="fade-up" data-aos-delay="150" class="rounded-xl border border-zinc-200 bg-white p-5">
+                        <div class="w-12 h-12 rounded-lg flex items-center justify-center bg-[#FFF3C4]">
+                            <i class="fa-solid fa-life-ring text-[#8C6A1C]"></i>
+                        </div>
+                        <h3 class="mt-4 font-semibold text-zinc-900">Ongoing Guidance</h3>
+                        <p class="text-sm text-zinc-600 mt-1">
+                            Regular reviews and responsive advice—so your plan adapts as markets move and life evolves.
+                        </p>
+                        <a href="/contact.html"
+                            class="inline-flex items-center gap-2 text-sm mt-3 text-[#8C6A1C] hover:opacity-80">
+                            Talk to an advisor <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 md:mt-32 mt-12 overflow-hidden  bg-yellow-50">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center md:gap-20 gap-6 flex-col lg:flex-row md:mt-20">
+
+                <!-- Copy -->
+                <div class="w-full lg:w-1/2">
+                    <h2 data-aos="fade-up"
+                        class="md:text-5xl text-4xl text-zinc-900 font-semibold md:leading-[4rem] mb-6 text-center lg:text-left">
+                        Built by fiduciaries. Tuned for <span class="text-[#D4AF37]">your goals.</span>
+                    </h2>
+
+                    <div
+                        class="mx-auto lg:mx-0 w-44 h-px bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mb-7">
+                    </div>
+
+                    <p data-aos="fade-up" class="text-lg text-zinc-700/90 mb-10 text-center lg:text-left">
+                        We’re an independent advisory firm focused on practical wealth management—combining disciplined
+                        <strong class="text-zinc-900">portfolio strategy</strong>, tailored
+                        <strong class="text-zinc-900">financial &amp; retirement planning</strong>, and clear
+                        <strong class="text-zinc-900">insurance guidance</strong>. Integrity and transparency guide
+                        every recommendation.
+                    </p>
+
+                    <a href="/about.html" data-aos="fade-up"
+                        class="cursor-pointer py-3 px-8 w-60 bg-[#D4AF37] text-zinc-900 text-base font-semibold transition-all duration-300 block text-center rounded-full hover:bg-[#C9A227] mx-auto lg:mx-0 border-2 border-[#D4AF37]">
+                        Our Story
+                    </a>
+                </div>
+
+                <!-- Images -->
+                <div class="w-full lg:w-1/2 lg:mt-0 md:mt-16 mt-10 max-lg:max-w-2xl">
+                    <div class="grid grid-cols-2 min-[450px]:grid-cols-2 md:grid-cols-3 md:gap-8 gap-3">
+                        <img data-aos="zoom-in" src="https://pagedone.io/asset/uploads/1696238644.png"
+                            alt="Advisor reviewing portfolio allocations"
+                            class="w-44 h-56 rounded-2xl object-cover md:mt-20 mx-auto ring-1 ring-[#D4AF37]/25 shadow" />
+                        <img data-aos="zoom-in" src="https://pagedone.io/asset/uploads/1696238665.png"
+                            alt="Client meeting — retirement timeline"
+                            class="w-44 h-56 rounded-2xl object-cover mx-auto ring-1 ring-[#D4AF37]/25 shadow" />
+                        <img data-aos="zoom-in" src="https://pagedone.io/asset/uploads/1696238684.png"
+                            alt="Insurance planning discussion"
+                            class="w-44 h-56 rounded-2xl object-cover md:mt-20 mx-auto ring-1 ring-[#D4AF37]/25 shadow" />
+                        <img data-aos="zoom-in" src="https://pagedone.io/asset/uploads/1696238702.png"
+                            alt="Financial plan review session"
+                            class="w-44 h-56 rounded-2xl object-cover mx-auto ring-1 ring-[#D4AF37]/25 shadow" />
+                        <img data-aos="zoom-in" src="https://pagedone.io/asset/uploads/1696238720.png"
+                            alt="Advisor analyzing market trends"
+                            class="w-44 h-56 rounded-2xl object-cover md:-mt-20 mx-auto ring-1 ring-[#D4AF37]/25 shadow" />
+                        <img data-aos="zoom-in" src="https://pagedone.io/asset/uploads/1696238737.png"
+                            alt="Collaborative planning at Nightgale Wealth"
+                            class="w-44 h-56 rounded-2xl object-cover mx-auto ring-1 ring-[#D4AF37]/25 shadow" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="disclosures" class="relative overflow-hidden  bg-[#0B1220] py-16 md:py-20 text-zinc-200">
+        <!-- soft gold glows -->
+        <div class="pointer-events-none absolute inset-0 -z-10">
+            <div class="absolute -top-24 -left-20 w-[28rem] h-[28rem] rounded-full blur-3xl opacity-10"
+                style="background: radial-gradient(circle at 30% 30%, #D4AF37 0%, transparent 65%);"></div>
+            <div class="absolute -bottom-24 -right-20 w-[28rem] h-[28rem] rounded-full blur-3xl opacity-10"
+                style="background: radial-gradient(circle at 70% 70%, #8C6A1C 0%, transparent 65%);"></div>
+        </div>
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10">
+            <!-- Left: Contact + Quick Links -->
+            <aside class="lg:col-span-5">
+                <div class="rounded-2xl border border-zinc-800/60 bg-black/30 p-6 md:p-8">
+                    <!-- Logo / Badge (optional) -->
+                    <div class="mb-6">
+                        <img src="/docs/assets/images/logo1.png" class="h-36" alt="">
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-zinc-100">Contact Information</h3>
+
+                    <dl class="mt-6 space-y-4 text-sm">
+                        <div class="grid grid-cols-5 gap-4">
+                            <dt class="col-span-2 text-zinc-400">Principle Office:</dt>
+                            <dd class="col-span-3 text-zinc-100">
+                                430 Franklin St.<br />2nd Floor<br />Schenectady, NY 12305
+                            </dd>
+                        </div>
+                        <div class="grid grid-cols-5 gap-4">
+                            <dt class="col-span-2 text-zinc-400">Mailing Address:</dt>
+                            <dd class="col-span-3 text-zinc-100">
+                                PO Box 4212<br />Schenectady, NY 12304
+                            </dd>
+                        </div>
+                        <div class="grid grid-cols-5 gap-4">
+                            <dt class="col-span-2 text-zinc-400">Phone Number:</dt>
+                            <dd class="col-span-3">
+                                <a href="tel:+19498452776" class="hover:text-white">+1 (949) 845-2776</a>
+                            </dd>
+                        </div>
+                        <div class="grid grid-cols-5 gap-4">
+                            <dt class="col-span-2 text-zinc-400">Email:</dt>
+                            <dd class="col-span-3">
+                                <a href="mailto:joshua@nightgalewealth.com"
+                                    class="hover:text-white">joshua@nightgalewealth.com</a>
+                            </dd>
+                        </div>
+                    </dl>
+
+                    <!-- BrokerCheck -->
+                    <div class="mt-8">
+                        <a href="https://brokercheck.finra.org/" target="_blank" rel="noopener"
+                            class="inline-flex items-center gap-2 rounded-lg border border-[#D4AF37]/40 bg-white/5 px-4 py-2 hover:bg-white/10 transition">
+                            <i class="fa-solid fa-shield-check text-[#D4AF37]"></i>
+                            <span class="text-sm">Check background on <span class="font-semibold text-white">FINRA
+                                    BrokerCheck</span></span>
+                        </a>
+                        <!-- If you embed the official widget, mount it here: -->
+                        <div id="brokercheck-widget" class="mt-3"></div>
+                    </div>
+
+                    <!-- Quick PDF Links (placeholders) -->
+                    <div class="mt-10">
+                        <p class="text-xs text-zinc-400">
+                            All material on this website is for educational purposes and does not constitute financial
+                            or legal advice.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-3">
+                            <a href="/docs/Privacy_Policy.pdf"
+                                class="text-sm underline underline-offset-4 hover:text-white">Privacy Policy</a>
+                            <span class="text-zinc-500">•</span>
+                            <a href="/docs/Form_CRS.pdf"
+                                class="text-sm underline underline-offset-4 hover:text-white">Form CRS</a>
+                            <span class="text-zinc-500">•</span>
+                            <a href="/docs/Business_Continuity_Plan.pdf"
+                                class="text-sm underline underline-offset-4 hover:text-white">Business Continuity
+                                Plan</a>
+                        </div>
+                        <p class="mt-2 text-xs text-zinc-500">
+                            These links will open PDF files. Replace with final documents when available.
+                        </p>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Right: Disclosures / Legal -->
+            <article class="lg:col-span-7">
+                <div class="prose prose-invert max-w-none">
+                    <p>
+                        Check the background of your financial professional on FINRA’s
+                        <a href="https://brokercheck.finra.org/"
+                            class="text-[#D4AF37] hover:opacity-90">BrokerCheck</a>.
+                    </p>
+
+                    <p>
+                        The content is developed from sources believed to be providing accurate information.
+                        The information in this material is not intended as tax or legal advice. Please consult legal or
+                        tax
+                        professionals for specific information regarding your individual situation. The opinions
+                        expressed and material
+                        provided are for general information, and should not be considered a solicitation for the
+                        purchase or sale of any security.
+                    </p>
+
+                    <p>
+                        We take protecting your data and privacy very seriously. As of January&nbsp;1, 2020 the
+                        <a href="https://oag.ca.gov/privacy/ccpa" class="text-[#D4AF37] hover:opacity-90">California
+                            Consumer Privacy Act (CCPA)</a>
+                        suggests the following link as an extra measure to safeguard your data:
+                        <a href="/ccpa-do-not-sell" class="text-[#D4AF37] hover:opacity-90">Do not sell my personal
+                            information</a>.
+                    </p>
+
+                    <p>
+                        Securities and Custodian services offered through Charles Schwab &amp; Co., Inc. (Schwab),
+                        independent qualified custodian holding the client’s assets. Member
+                        <a href="https://www.finra.org/" class="text-[#D4AF37] hover:opacity-90">FINRA</a> /
+                        <a href="https://www.sipc.org/" class="text-[#D4AF37] hover:opacity-90">SIPC</a>.
+                        Charles Schwab &amp; Co., Inc. (Schwab) and Nightgale Wealth Management LLC are not affiliated.
+                        Nightgale Wealth Management LLC is independent and not affiliated with or supervised by Schwab,
+                        however clients have direct access to their accounts at Schwab.
+                    </p>
+
+                    <p>
+                        This communication is strictly intended for individuals residing in the states of NY. No offers
+                        may be made or
+                        accepted from any resident outside the specific states referenced.
+                    </p>
+
+                    <h4 class="mt-8">Important Consumer Information</h4>
+                    <p class="mt-2">
+                        A broker/dealer, investment adviser, BD agent, or IA representative may only transact business
+                        in a state if first registered,
+                        or if excluded or exempt from state registration requirements. Follow-up, individualized
+                        responses to persons in a state that
+                        involve effecting or attempting to effect transactions in securities, or the rendering of
+                        personalized investment advice for
+                        compensation, will not be made without first complying with appropriate registration
+                        requirements, or an applicable exemption or exclusion.
+                        For information concerning the licensing status or disciplinary history of a broker/dealer,
+                        investment adviser, BD agent, or IA representative,
+                        a consumer should contact their state securities regulator or visit
+                        <a href="https://brokercheck.finra.org/" class="text-[#D4AF37] hover:opacity-90">FINRA
+                            BrokerCheck</a>.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="max-w-7xl w-full mx-auto md:mt-24 overflow-hidden  mt-10 p-5">
+        <!-- Eyebrow -->
+        <p data-aos="fade-up" class="text-center text-[#8C6A1C] pb-2">
+            <span
+                class="py-1 px-4 rounded-full text-xs font-medium text-[#8C6A1C] bg-[#FFF7D6] border border-[#D4AF37]/30">
+                Market Insights
+            </span>
+        </p>
+
+        <!-- Headline -->
+        <h2 data-aos="fade-up"
+            class="text-center md:text-5xl text-2xl max-w-3xl capitalize leading-tight mx-auto font-semibold text-zinc-900">
+            Stay informed with our <span class="text-[#D4AF37]">latest commentary</span>
+        </h2>
+
+        <!-- Sub -->
+        <p data-aos="fade-up" class="text-zinc-700 max-w-3xl mx-auto pt-3 text-center">
+            Quarterly market updates, planning guidance, and firm notices. Read summaries online or download the full
+            PDFs.
+        </p>
+
+        <!-- Feature card / preview -->
+        <div data-aos="zoom-in"
+            class="max-w-5xl mx-auto md:mt-10 mt-8 w-full p-4 rounded-2xl bg-[#FFF3C4] border border-[#D4AF37]/30">
+            <div class="relative">
+                <img src="/docs/assets/images/img.jpeg" class="w-full rounded-2xl ring-1 ring-[#D4AF37]/40"
+                    alt="Quarterly market commentary preview">
+                <!-- overlay label -->
+                <span
+                    class="absolute bottom-4 left-4 text-xs md:text-sm px-3 py-1 rounded-full bg-black/60 text-white backdrop-blur">
+                    Q2 Market Commentary — PDF
+                </span>
+            </div>
+
+            <!-- quick links -->
+            <div class="flex flex-wrap items-center justify-center gap-3 mt-4">
+                <a href="/docs/Quarterly_Commentary.pdf"
+                    class="text-sm inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-[#D4AF37] text-zinc-900 bg-[#D4AF37] hover:opacity-85 transition">
+                    Download Commentary
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+                <a href="/docs/Form_CRS.pdf"
+                    class="text-sm inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-zinc-300 text-zinc-800 hover:bg-white transition">
+                    Form CRS
+                </a>
+                <a href="/docs/Privacy_Policy.pdf"
+                    class="text-sm inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-zinc-300 text-zinc-800 hover:bg-white transition">
+                    Privacy Policy
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="md:mt-32 mt-12 overflow-hidden " id="cta-banner">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div
+                class="relative overflow-hidden rounded-2xl border border-zinc-800/60 bg-gradient-to-r from-[#121824] to-[#0B1220] p-10 md:p-12 xl:p-16 flex flex-col-reverse lg:flex-row justify-between md:gap-12">
+
+                <!-- soft gold glows -->
+                <span
+                    class="pointer-events-none absolute -top-16 -left-20 w-[28rem] h-[28rem] rounded-full blur-3xl opacity-10"
+                    style="background: radial-gradient(circle at 30% 30%, #D4AF37 0%, transparent 65%);"></span>
+                <span
+                    class="pointer-events-none absolute -bottom-16 -right-24 w-[30rem] h-[30rem] rounded-full blur-3xl opacity-10"
+                    style="background: radial-gradient(circle at 70% 70%, #8C6A1C 0%, transparent 65%);"></span>
+
+                <!-- Visual -->
+                <div class="w-full lg:w-2/6 relative h-full">
+                    <img data-aos="fade-up" src="/docs/assets/images/img2.jpg"
+                        alt="Nightgale Wealth — Art Deco motif"
+                        class="rounded-3xl mx-auto object-cover md:h-[30rem] md:mt-0 mt-5 ring-1 ring-[#D4AF37]/25" />
+                </div>
+
+                <!-- Copy -->
+                <div class="w-full lg:w-2/3">
+                    <h2 data-aos="fade-up"
+                        class="md:text-5xl text-4xl text-zinc-100 font-semibold mb-6 text-center lg:text-left">
+                        Plan with clarity. <span class="text-[#D4AF37]">Invest with discipline.</span>
+                    </h2>
+
+                    <p data-aos="fade-up" class="text-lg text-zinc-300 leading-8 mb-8 text-center lg:text-left">
+                        Nightgale Wealth provides independent, fiduciary advice—combining disciplined
+                        <span class="text-zinc-100 font-medium">portfolio management</span>, tailored
+                        <span class="text-zinc-100 font-medium">financial &amp; retirement planning</span>, and clear
+                        <span class="text-zinc-100 font-medium">insurance guidance</span> to protect and grow what
+                        matters most.
+                    </p>
+
+                    <!-- Highlights -->
+                    <ul class="grid sm:grid-cols-3 grid-cols-1 gap-4 mb-10">
+                        <li class="flex items-start gap-3">
+                            <span class="inline-flex shrink-0 h-9 w-9 items-center justify-center rounded-xl bg-[#FFF3C4]">
+                                <i class="fa-solid fa-scale-balanced text-[#8C6A1C]"></i>
+                            </span>
+                            <div>
+                                <p class="text-zinc-100 font-semibold">Fiduciary Advice</p>
+                                <p class="text-sm text-zinc-400">Your interests first, always.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="inline-flex shrink-0 h-9 w-9 items-center justify-center rounded-xl bg-[#FFF3C4]">
+                                <i class="fa-solid fa-file-invoice-dollar text-[#8C6A1C]"></i>
+                            </span>
+                            <div>
+                                <p class="text-zinc-100 font-semibold">Transparent Fees</p>
+                                <p class="text-sm text-zinc-400">Simple, straightforward pricing.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="inline-flex shrink-0 h-9 w-9 items-center justify-center rounded-xl bg-[#FFF3C4]">
+                                <i class="fa-solid fa-building-columns text-[#8C6A1C]"></i>
+                            </span>
+                            <div>
+                                <p class="text-zinc-100 font-semibold">Charles Schwab Custody</p>
+                                <p class="text-sm text-zinc-400">Direct access to your accounts.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row gap-4 items-center lg:items-start">
+                        <a href="/contact.html" data-aos="fade-up"
+                            class="inline-flex items-center justify-center px-7 py-3 rounded-full text-zinc-900 border-2 border-[#D4AF37] bg-[#D4AF37] hover:opacity-85 transition">
+                            Schedule a Call <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="/disclosures.html" data-aos="fade-up" data-aos-delay="100"
+                            class="inline-flex items-center justify-center px-7 py-3 rounded-full border-2 border-zinc-700 text-zinc-200 hover:bg-white/5 transition">
+                            View Disclosures
+                        </a>
+                        <a href="https://brokercheck.finra.org/" target="_blank" rel="noopener" data-aos="fade-up"
+                            data-aos-delay="150"
+                            class="inline-flex items-center gap-2 text-sm text-zinc-300 hover:text-white">
+                            <i class="fa-solid fa-shield-check text-[#D4AF37]"></i> Verify on FINRA BrokerCheck
+                        </a>
+                    </div>
+
+                    <!-- tiny legal note -->
+                    <p class="mt-4 text-[11px] text-zinc-500">
+                        Nightgale Wealth is an Independent Registered Investment Adviser. Information is educational and
+                        not tax or legal advice.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="bg-zinc-100 pt-5 md:mt-20 mt-10" id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="./docs/javascript/global.js"></script>
+    <script src="./docs/javascript/navbar.js"></script>
+    <script src="./docs/javascript/footer.js"></script>
+</body>
+
+</html>
