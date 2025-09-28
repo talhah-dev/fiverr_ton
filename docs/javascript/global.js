@@ -28,7 +28,7 @@ function buildLangList(ul) {
     ul.innerHTML = '';
     LANGS.forEach(l => {
         const li = document.createElement('li');
-        li.innerHTML = `<button class="w-full text-left rounded-xl px-4 py-3 font-medium hover:text-[#0098ea] transition-all duration-500 cursor-pointer">${l}</button>`;
+        li.innerHTML = `<button class="w-full text-center rounded-xl px-4 py-2 font-medium hover:text-[#0098ea] transition-all duration-500 cursor-pointer">${l}</button>`;
         ul.appendChild(li);
     })
 }
@@ -39,7 +39,7 @@ function isDesktop() { return window.matchMedia('(min-width: 768px)').matches; }
 
 function openDesktopLang() {
     langDropdown.classList.remove('hidden');
-    langDropdown.classList.add('menu-open', 'translate-y-0');
+    langDropdown.classList.add('hidden', 'translate-y-0');
     overlay.classList.remove('hidden');
     requestAnimationFrame(() => overlay.classList.add('opacity-100'));
     langBtn.setAttribute('aria-expanded', 'true');
@@ -206,3 +206,38 @@ const gsSwiper = new Swiper('.getting-started-swiper', {
         1024: { slidesPerView: 3, spaceBetween: 24 }
     }
 });
+
+// Tabs
+
+(() => {
+    const triggers = document.querySelectorAll('.tab-trigger');
+    const panels = document.querySelectorAll('.tab-panel');
+
+    function setActiveStyles(btn, active) {
+        btn.classList.toggle('bg-white/10', active);
+        btn.classList.toggle('text-white', active);
+        if (btn.classList.contains('desktop-tab')) {
+            btn.classList.toggle('border-[#95a5ff]', active);
+        }
+    }
+
+    function showTab(id) {
+        triggers.forEach(btn => {
+            const active = btn.dataset.tab === id;
+            btn.setAttribute('aria-selected', active);
+            setActiveStyles(btn, active);
+        });
+
+        panels.forEach(p => { p.classList.add('hidden'); p.classList.remove('opacity-100'); });
+        const el = document.getElementById('panel-' + id);
+        el.classList.remove('hidden');
+        el.classList.add('opacity-0');
+        requestAnimationFrame(() => {
+            el.classList.remove('opacity-0');
+            el.classList.add('opacity-100');
+        });
+    }
+
+    triggers.forEach(btn => btn.addEventListener('click', () => showTab(btn.dataset.tab)));
+    showTab('mini'); // default
+})();

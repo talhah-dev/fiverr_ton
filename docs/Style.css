@@ -98,3 +98,9 @@ input:user-invalid {
         opacity: 0;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .lang-wrap{
+        overflow: hidden;
+    }
+}
