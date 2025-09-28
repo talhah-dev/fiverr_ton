@@ -152,6 +152,37 @@ document.addEventListener('click', (e) => {
 });
 
 
+const overlayMobile = qs('#overlayMobile');
+
+// Close all mobile panels + overlay
+function closeMobilePanels() {
+    mobilePanels.forEach(p => p.classList.add('hidden'));
+    overlayMobile.classList.remove('opacity-100');
+    setTimeout(() => overlayMobile.classList.add('hidden'), 180);
+    document.documentElement.classList.remove('overflow-hidden');
+}
+
+// Open one mobile panel
+function openMobilePanel(target) {
+    closeDesktopLang();
+    closeLangSheetFn();
+
+    mobilePanels.forEach(p => { if (p !== target) p.classList.add('hidden'); });
+
+    const willOpen = target.classList.contains('hidden');
+    if (willOpen) {
+        target.classList.remove('hidden');
+        overlayMobile.classList.remove('hidden');
+        requestAnimationFrame(() => overlayMobile.classList.add('opacity-100'));
+        document.documentElement.classList.add('overflow-hidden'); // lock scroll
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+        closeMobilePanels();
+    }
+}
+
+// ✅ Close when overlay clicked
+overlayMobile.addEventListener('click', closeMobilePanels);
 
 // Hero section
 
